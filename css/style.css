@@ -59,7 +59,7 @@ html {
   position: fixed;
   z-index: 9999;
   bottom: 10px;
-  right: 40px;
+  right: 10px;
   display: none;
   cursor: pointer;
 }
@@ -73,39 +73,16 @@ a:hover {
   text-decoration: underline;
 }
 
-.uparrow {
-    height: 0px;
-    width: 0px;
-    border-width: 16px;
-    border-style: solid;
-    border-color: transparent transparent #333 transparent;
-    position: absolute;
-    bottom: 16px;
-    left: 0;
-}
-
-.uparrow:after {
-    content: '';
-    width: 12px;
-    height: 16px;
-    background-color: #333;
-    position: absolute;
-    top: 16px;
-    right: -6px;
-}
-
 .slide {
   position: relative;
   height: 100vh;
   width: 100%;
   min-width: 600px;
+  min-height: 200px;
 }
 
-.halfslide {
-  position: relative;
+.slide.half {
   height: 50vh;
-  width: 100%;
-  min-width: 600px;
 }
 
 .slide-orange {

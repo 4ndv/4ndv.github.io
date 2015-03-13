@@ -38,4 +38,5 @@ $(document).ready(function() {
       $("#go-top").fadeOut(150);
     }
   });
+  $(window).scroll();
 });
