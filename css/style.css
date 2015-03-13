@@ -1,0 +1,123 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:400,900);
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: "Lato", sans-serif;
+  color: #262626;
+}
+
+#header {
+  text-align: center;
+}
+
+#header > h1 {
+  font-weight: 900;
+  font-size:60px;
+}
+
+#header > ul {
+  margin-top: 30px;
+  list-style-type: none;
+}
+
+#header > ul > li {
+  margin-left: 10px;
+  margin-right: 10px;
+  display: inline-block;
+  font-weight: 900;
+}
+
+#header > ul > li > a {
+  color: #FFF;
+  font-size: 22px;
+}
+
+#contact {
+  text-align: center;
+}
+
+#contact > h1 {
+  font-weight: 900;
+  font-size: 50px;
+}
+
+#contact a {
+  margin-left: 5px;
+  margin-right: 5px;
+  color: #FFF;
+}
+
+#projects {
+  min-width: 600px;
+}
+
+#go-top {
+  position: fixed;
+  z-index: 9999;
+  bottom: 10px;
+  right: 40px;
+  display: none;
+  cursor: pointer;
+}
+
+a {
+  color: #121212;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.uparrow {
+    height: 0px;
+    width: 0px;
+    border-width: 16px;
+    border-style: solid;
+    border-color: transparent transparent #333 transparent;
+    position: absolute;
+    bottom: 16px;
+    left: 0;
+}
+
+.uparrow:after {
+    content: '';
+    width: 12px;
+    height: 16px;
+    background-color: #333;
+    position: absolute;
+    top: 16px;
+    right: -6px;
+}
+
+.slide {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  min-width: 600px;
+}
+
+.halfslide {
+  position: relative;
+  height: 50vh;
+  width: 100%;
+  min-width: 600px;
+}
+
+.slide-orange {
+  background-color: #FF735A;
+  color: #FFF;
+}
+
+.slide-gray {
+  background-color: #f3f3f3;
+}
+
+.slide-blue {
+  background-color: #48C3CF;
+  color: #FFF;
+}
