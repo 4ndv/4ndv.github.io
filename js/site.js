@@ -5,13 +5,6 @@ var scrollTo = function(elem) {
 }
 
 $(document).ready(function() {
-  var resizeCallback = function() {
-    $(".slide").centerChild(".inner");
-  };
-
-  $(window).on('resize orientationChanged', resizeCallback);
-  $(window).resize();
-
   $("#menu-projects").click(function(){ scrollTo("#slide-two"); return false; });
   $("#menu-contact").click(function(){ scrollTo("#slide-three"); return false; });
 

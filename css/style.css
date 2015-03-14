@@ -81,6 +81,13 @@ a:hover {
   min-height: 200px;
 }
 
+.inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .slide.half {
   height: 50vh;
 }
