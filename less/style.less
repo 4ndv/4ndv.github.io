@@ -4,7 +4,7 @@
 @text: #424242;
 @blocks: #292929;
 @mainbg: #FFFFFF;
-@accent1: #3299BB;
+@accent1: #38a9cf;
 @accent2: #FF9900;
 
 * {
@@ -55,7 +55,7 @@
   }
 
   section {
-    padding: 15px 15px 5px 15px;
+    padding: 10px 10px 10px 10px;
     clear: left;
     background-color: @mainbg;
     border-radius: 0 0 5px 5px;
@@ -68,15 +68,17 @@
 
 .project {
   display: block;
-  padding: 5px;
-  margin-bottom: 10px;
+  padding: 10px;
+  margin-bottom: 5px;
   color: @text;
   text-decoration: none;
 }
 
 .project:hover {
   display: block;
-  background-color: lighten(@background, 2%);
+  background-color: @accent1;
+  color: #FFF;
+  border-radius: 3px;
 }
 
 body {

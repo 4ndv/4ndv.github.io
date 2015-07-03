@@ -1,10 +1,8 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin,cyrillic-ext);
-
 * {
   margin: 0;
   padding: 0;
 }
-
 .wrapper {
   width: 760px;
   margin: 7% auto;
@@ -42,7 +40,7 @@
   border-bottom: 2px #FFF solid;
 }
 .wrapper section {
-  padding: 15px 15px 5px 15px;
+  padding: 10px 10px 10px 10px;
   clear: left;
   background-color: #ffffff;
   border-radius: 0 0 5px 5px;
@@ -52,14 +50,16 @@
 }
 .project {
   display: block;
-  padding: 5px;
-  margin-bottom: 10px;
+  padding: 10px;
+  margin-bottom: 5px;
   color: #424242;
   text-decoration: none;
 }
 .project:hover {
   display: block;
-  background-color: #f7f7f7;
+  background-color: #38a9cf;
+  color: #FFF;
+  border-radius: 3px;
 }
 body {
   background-color: #f2f2f2;
