@@ -1,0 +1,66 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin,cyrillic-ext);
+* {
+  margin: 0;
+  padding: 0;
+}
+.wrapper {
+  width: 760px;
+  margin: 7% auto;
+}
+.wrapper header {
+  padding: 20px 20px 10px 20px;
+  box-sizing: border-box;
+  background-color: #292929;
+  border-radius: 5px 5px 0 0;
+  color: #FFFFFF;
+}
+.wrapper header .inner {
+  position: relative;
+  margin-top: -50px;
+}
+.wrapper header #avatar {
+  width: 100px;
+  height: 100px;
+  border: 7px #FFF solid;
+  border-radius: 3px;
+}
+.wrapper header .menu {
+  padding-top: 5px;
+}
+.wrapper header .menu a {
+  display: inline-block;
+  padding-bottom: 3px;
+  margin-right: 5px;
+  text-decoration: none;
+  color: #FFF;
+  font-size: 1.2em;
+}
+.wrapper header .menu a:hover {
+  padding-bottom: 1px;
+  border-bottom: 2px #FFF solid;
+}
+.wrapper section {
+  padding: 15px 15px 5px 15px;
+  clear: left;
+  background-color: #ffffff;
+  border-radius: 0 0 5px 5px;
+}
+.wrapper section #template {
+  display: none;
+}
+.project {
+  display: block;
+  padding: 5px;
+  margin-bottom: 10px;
+  color: #424242;
+  text-decoration: none;
+}
+.project:hover {
+  display: block;
+  background-color: #f7f7f7;
+}
+body {
+  background-color: #f2f2f2;
+  font-family: 'Open Sans', sans-serif;
+  color: #424242;
+}
