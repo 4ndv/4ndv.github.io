@@ -1,7 +1,17 @@
 $(document).ready(function() {
+  var starscompare = function(a, b) {
+    if(a.stargazers_count > b.stargazers_count) {
+      return -1;
+    }
+    if(b.stargazers_count > a.stargazers_count) {
+      return 1;
+    }
+    return 0;
+  }
+
   $.ajax("https://api.github.com/users/4ndv/repos?sort=updated")
   .done(function(data) {
-    console.log(data);
+    data.sort(starscompare);
     $("#projects .loading").hide();
     data.forEach(function(item) {
       var project = $("#template").clone();
