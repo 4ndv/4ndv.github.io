@@ -21,7 +21,7 @@ $(document).ready(function() {
       project.find(".language").text(item.language);
       project.find(".stars").text(item.stargazers_count);
 
-      if(item.has_pages) {
+      if(item.has_pages && item.name !== "4ndv.github.io") {
         project.attr("href", "http://4ndv.github.io/" + item.name);
       } else {
         project.attr("href", item.html_url);
