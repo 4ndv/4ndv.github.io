@@ -1,0 +1,68 @@
+==================================================================
+https://keybase.io/andv
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://4ndv.github.io
+  * I am andv (https://keybase.io/andv) on keybase.
+  * I have a public key with fingerprint C088 3A2D 3142 A491 8E43  653D B1AC B827 B4AC F1EF
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "fingerprint": "c0883a2d3142a4918e43653db1acb827b4acf1ef",
+            "host": "keybase.io",
+            "key_id": "b1acb827b4acf1ef",
+            "kid": "0101a895d118d322cc650d3b6a5800b321fcb42602730c3812bf926fdb92d8022eb10a",
+            "uid": "8b255c20b24eaf32b8f0f0a9e5d2bc19",
+            "username": "andv"
+        },
+        "service": {
+            "hostname": "4ndv.github.io",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1440347292,
+    "expire_in": 157680000,
+    "prev": "1b00a02b96302a067cd1ba4d767b3bf014b48a08b32fc747dad258d849338c11",
+    "seqno": 6,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.43
+Comment: https://keybase.io/crypto
+
+yMIcAnicbZJpSFRRGIbH9kzBdglsuURZSZ7lrlMUWWKEBG20UE3n3HOuc6uZO83c
+mTSbMhKTICGhfkRJEAWJ0SIthm3mRJBGENpOZBbUj4yKsojqXLN//Tqc732/55z3
+42vNHOhLT/uxr8ppudEaSLt3a37ct+rJl6PlEnVYmeQvl7bwvsOywyU8GonaYVfy
+SybQdUwQw1BGRDagzmWsKphRSEyqI43KxLQgt6Q8KejEvA6BoSTGZ9uOqIlLwGai
++h//lj4BQACJbigMQp1hhExTVQDDVCWKDgDFCFomlZEKkIaBiXWIqGUg1WLUQEwH
+CHEKARG4eB9Op0hRTAQokjmxMKK6BSxADK4wRE1oeMYYj4ZJiAs3CbOElMyTRCVh
+m9yL76XoV2Whzi6x3WCc/k0TiTquYzpbhRZ03UjM7/W6ZRHPvJ3TQD8mQO0wE1MU
+HQkejdlOWPJD4TRd2+NCWQZY1pCB8iReGrGjPGB7DkVTRWIAvHd4QiAhBYAARA0V
+A0SAqpkMUiIzTdUophaAMpV1AnQxJMvUZI0RhhSd6bKBsW5CKHnBtoUdya+Kb5IS
+gYzZJWHixqNcSrbcXD/Il5buGzJ4gLcHvvThWf+2Ixka5qu9O/3bntDhoejdpvIz
++aGO7yseFD6+0jMTVHRlnyjN6RxN73xoSLrX3ncmmk7erkOtODeoNMxbtLuqeXjh
+jm9NdAFcCHprxrY9r+3puD9t7pTTysZBsx4V/546vn51IPfG2VRq7Zlx9adSV89e
+WFcw8VJpxqvJRbuLf/28WphZN2qNdX7lwSVKS9HTpUr3xaytHZ8qH0z4jBINx4/1
+Lg593J/R1lyPfzSNnZGTF1tb/PH6m229wa5nPRXV+Z0F555WJ9dkVdRUR0e++Dq6
+fUUDyb5ctSt17/WvyqH56c6GnDmTGuPthSNejm9cfmRnVa/P3pwNlr0NNc966Ose
+83vv+os1hw7IfwAebS0u
+=oEvd
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/andv
+
+==================================================================
+
