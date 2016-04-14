@@ -1,9 +1,11 @@
 var gulp = require("gulp"),
     less = require("gulp-less"),
-    path = require("path");
+    path = require("path"),
+    exec = require('child_process').exec;
 
 var paths = {
-  less: ['./less/**/*.less']
+  less: ['./less/**/*.less'],
+  riot: ['./js/**/*.tag']
 }
 
 gulp.task('less', function() {
@@ -14,8 +16,15 @@ gulp.task('less', function() {
     .pipe(gulp.dest('./css'));
 });
 
-gulp.task('watch', function() {
-  gulp.watch(paths.less, ['less']);
+// riot-gulp doesn't work with coffee, idk why
+gulp.task('riot', function() {
+	return exec('riot --type coffee --expr "js"');
 });
 
-gulp.task('default', ['watch', 'less']);
+gulp.task('watch', function() {
+	gulp.start('default');
+  gulp.watch(paths.less, ['less']);
+  gulp.watch(paths.riot, ['riot'])
+});
+
+gulp.task('default', ['riot', 'less']);

@@ -1,37 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="css/style.css" />
-  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-  <script src="js/site.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf8" />
   <title>Andrey Viktorov</title>
 </head>
 <body>
-  <div class="wrapper">
-    <header>
-      <div class="inner">
-        <img src="https://avatars.githubusercontent.com/u/10115449" id="avatar" alt="Avatar" />
-        <h1>Andrey Viktorov</h1>
-        <div class="menu">
-          <a href="mailto:andv@outlook.com"><i class="fa fa-envelope"></i></a>
-          <a href="https://twitter.com/andv1337"><i class="fa fa-twitter"></i></a>
-          <a href="https://vk.com/andvandv"><i class="fa fa-vk"></i></a>
-          <a href="https://github.com/4ndv"><i class="fa fa-github"></i></a>
-        </div>
-      </div>
-    </header>
-    <section>
-      <div id="projects">
-        <p class="loading">Loading projects from github...</p>
-        <a class="project" id="template">
-          <h3 class="name"></h3>
-          <h6><span class="language"></span> <i class="fa fa-star"></i> <span class="stars"></span></h6>
-          <p class="description"></p>
-        </a>
-      </div>
-    </section>
-  </div>
+  <header>
+    <div class="container">
+      <h1>Andrey Viktorov</h1>
+      <nav>
+        <a href="mailto:andv@outlook.com">Write a letter</a>
+        <a href="https://be.net/andv">Behance</a>
+        <a href="https://vk.com/id22087152">VK</a>
+        <a href="https://twitter.com/ksarrel">Twitter</a>
+        <a href="https://github.com/4ndv">Github</a>
+      </nav>
+    </div>
+  </header>
+
+  <github-repos></github-repos>
+
+  <script src="https://cdn.jsdelivr.net/riot/2.3/riot.min.js"></script>
+  <script src="js/github-repos.js"></script>
+
+  <script>
+    riot.mount('github-repos', { user: '4ndv', ignore_pages: ['4ndv.github.io'] });
+  </script>
 
   <!-- Yandex.Metrika counter --><script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter31242438 = new Ya.Metrika({ id:31242438, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="https://mc.yandex.ru/watch/31242438" style="position:absolute; left:-9999px;" alt="" /></div></noscript><!-- /Yandex.Metrika counter -->
 </body>

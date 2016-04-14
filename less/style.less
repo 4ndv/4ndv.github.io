@@ -1,88 +1,64 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin,cyrillic-ext);
-
-@background: #f2f2f2;
-@text: #424242;
-@blocks: #292929;
-@mainbg: #FFFFFF;
-@accent1: #38a9cf;
-@accent2: #FF9900;
-
-* {
-  margin: 0;
-  padding: 0;
+header {
+  background: linear-gradient(45deg, #8E54E9, #4776E6);
+  width: 100%;
+  padding: 10rem 0;
+  color: #FFF;
 }
 
-.wrapper {
-  width: 760px;
-  margin: 7% auto;
-
-  header {
-    padding: 20px 20px 10px 20px;
-    box-sizing: border-box;
-    background-color: @blocks;
-    border-radius: 5px 5px 0 0;
-    color: #FFFFFF;
-
-    .inner {
-      position: relative;
-      margin-top: -50px;
+nav {
+  a {
+    display: block;
+    @media (min-width: 768px) {
+      display: inline-block;
+      margin: 0 1rem;
     }
-
-    #avatar {
-      width: 100px;
-      height: 100px;
-      border: 7px #FFF solid;
-      border-radius: 3px;
-    }
-
-    .menu {
-      padding-top: 5px;
-
-      a {
-        display: inline-block;
-        padding-bottom: 3px;
-        margin-right: 5px;
-        text-decoration: none;
-        color: #FFF;
-        font-size: 1.2em;
-      }
-
-      a:hover {
-        padding-bottom: 1px;
-        border-bottom: 2px #FFF solid;
-      }
+    color: #FFF;
+    text-transform: uppercase;
+    font-size: 14pt;
+    text-decoration: none;
+    &:hover {
+      color: #FFF;
+      text-decoration: none;
+      box-shadow: 0 2px 0 0 #FFF;
     }
   }
 
-  section {
-    padding: 10px 10px 10px 10px;
-    clear: left;
-    background-color: @mainbg;
-    border-radius: 0 0 5px 5px;
-
-    #template {
-      display: none;
-    }
+  :first-child {
+    margin-left: 0;
   }
 }
 
-.project {
-  display: block;
-  padding: 10px;
-  margin-bottom: 5px;
-  color: @text;
+.card {
+  position: relative;
+  background: #4776E6;
+  min-height: 150px;
+  padding: 1.5rem;
+  margin-bottom: 16px;
+  color: #FFF;
+  h3, h4, h5, h6 {
+    margin-top: 0;
+  }
+  .left {
+    float: left;
+  }
+  .right {
+    position: absolute;
+    right: 3rem;
+  }
+  .bottom {
+    position: absolute;
+    bottom: 1.5rem;
+    width: 100%;
+  }
+  &:hover {
+    background: linear-gradient(45deg, #6667E7, #4776E6);
+  }
+}
+
+.card-out:hover * {
   text-decoration: none;
 }
 
-.project:hover {
-  display: block;
-  background-color: @accent1;
-  color: #FFF;
-  border-radius: 3px;
-}
-
-body {
-  background-color: @background;
-  font-family: 'Open Sans', sans-serif;
-  color: @text;
+.card-out:hover h3 {
+  text-decoration: underline;
 }
