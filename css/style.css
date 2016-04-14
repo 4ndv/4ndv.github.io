@@ -51,7 +51,8 @@ nav :first-child {
   bottom: 1.5rem;
   width: 100%;
 }
-.card:hover {
+.card:hover,
+.card:active {
   background: linear-gradient(45deg, #6667E7, #4776E6);
 }
 .card-out:hover * {
