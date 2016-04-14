@@ -30,7 +30,7 @@ compare_stars = function(a, b) {
 filter_repos = function(repos) {
   repos.sort(compare_stars);
   repos.forEach(function(item) {
-    if (item.has_pages && opts.ignore_pages.indexOf(item.name) !== -1) {
+    if (item.has_pages && opts.ignore_pages.indexOf(item.name) === -1) {
       return item.html_url = "http://4ndv.github.io/" + item.name;
     }
   });
