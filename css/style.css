@@ -4,6 +4,9 @@ header {
   padding: 10rem 0;
   color: #FFF;
 }
+header h1 {
+  margin-top: 0;
+}
 nav a {
   display: block;
   color: #FFF;
