@@ -48,7 +48,7 @@
 		filter_repos = (repos)->
 			repos.sort(compare_stars)
 			repos.forEach (item)->
-				if item.has_pages and opts.ignore_pages.indexOf(item.name) != -1
+				if item.has_pages and opts.ignore_pages.indexOf(item.name) == -1
 					item.html_url = "http://4ndv.github.io/" + item.name
 			self.update({ repos: repos, not_loaded: false })
 
