@@ -19,19 +19,24 @@ gulp.task('less', function() {
     .pipe(gulp.dest('./css'))
 });
 
-// riot-gulp doesn't work with coffee, idk why
 gulp.task('riot', function() {
-  exec('riot --type coffee --expr "riot"');
+  gulp.start('riotcompile');
   return gulp.src(paths.riotcompiled)
-    .pipe(concat('app.js'))
+    .pipe(concat('./app.js'))
     .pipe(uglify())
-    .pipe(gulp.dest('./js'))
+    .pipe(gulp.dest('./js/'))
 });
 
-gulp.task('watch', function() {
-  gulp.start('default');
+// riot-gulp doesn't work with coffee, idk why
+gulp.task('riotcompile', function() {
+  exec('riot --type coffee --expr "riot"');
+})
+
+gulp.task('watch', ['default', 'watchers'])
+
+gulp.task('watchers', function() {
   gulp.watch(paths.less, ['less']);
-  gulp.watch(paths.riot, ['riot'])
+  gulp.watch(paths.riot, ['riot']);
 });
 
 gulp.task('default', ['riot', 'less']);
