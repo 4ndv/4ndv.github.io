@@ -7,7 +7,7 @@ var gulp = require("gulp"),
 
 var paths = {
   less: ['./less/**/*.less'],
-  riot: ['./js/**/*.tag'],
+  riot: ['./riot/**/*.tag'],
   riotcompiled: ['./riot/**/*.js']
 }
 
