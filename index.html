@@ -1,47 +1,49 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <style>
+    body {
+      font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+      line-height: 1.5;
+      font-size: 1.2em;
+    }
+
+    section {
+      max-width: 800px;
+      padding: 1.5em;
+      margin: 0 auto;
+    }
+
+    footer {
+      padding-top: 0.5em;
+    }
+
+    .photo {
+      border-radius: 0.25em;
+    }
+  </style>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="utf8" />
   <title>Andrey Viktorov</title>
 </head>
 <body>
-  <header>
-    <div class="container">
-      <h1>Andrey Viktorov</h1>
-      <nav>
-        <a href="mailto:andv@outlook.com">Write a letter</a>
-        <a href="http://be.net/andv">Behance</a>
-        <a href="https://medium.com/@andv">Medium</a>
-        <a href="https://vk.com/id22087152">VK</a>
-        <a href="https://twitter.com/ksarrel">Twitter</a>
-        <a href="https://github.com/4ndv">Github</a>
-      </nav>
-    </div>
-  </header>
-
-  <github-repos></github-repos>
-  <medium-posts></medium-posts>
-
-  <footer>
-    <div class="container">
-      <p>Copyright &copy; Andrey Viktorov, 2016 - present</p>
-    </div>
-  </footer>
-
-  <script type="text/javascript" src="https://www.google.com/jsapi"></script>
-  <script type="text/javascript">google.load("feeds", "1");</script>
-  <script src="https://cdn.jsdelivr.net/riot/2.3/riot.min.js"></script>
-  <script src="js/app.js"></script>
-
-  <script>
-    riot.mount('raw');
-    riot.mount('github-repos', { user: '4ndv', ignore_pages: ['4ndv.github.io'] });
-    riot.mount('medium-posts', { user: '@andv' });
-  </script>
+  <section>
+    <p><img class="photo" src="https://avatars3.githubusercontent.com/u/10115449?v=3&s=150" /></p>
+    <h1>Hello!</h1>
+    <p>My name is Andrey Viktorov. Currently, I'm working at <a target="_blank" href="http://develooper.ru">develooper.ru</a>. You can reach me by <a target="_blank" href="https://telegram.me/andvxyz">Telegram</a> or <a target="_blank" href="mailto:andv@outlook.com">E-Mail</a>. Also, you can read my posts at <a target="_blank" href="https://twitter.com/andvxyz">Twitter</a> and <a target="_blank" href="https://medium.com/@andv">Medium</a> (mostly on Russian). GPG keys available at <a target="_blank" href="https://keybase.io/andv">Keybase</a>.</p>
+    <p>Here're some of my projects:</p>
+    <ul>
+      <li><a target="_blank" href="/notiny">Notiny</a> - small jQuery growl-like notification plugin.</li>
+      <li><a target="_blank" href="/startupideas">Startup Ideas</a> - startup idea generator (on russian).</li>
+      <li><a target="_blank" href="/jquery.centerchild">jQuery.centerChild</a> - jQuery plugin for centering blocks.</li>
+      <li><a target="_blank" href="/lolbot">lolbot</a> - chat bot for VK.</li>
+    </ul>
+    <p>More open source projects available on <a target="_blank" href="https://github.com/andv">GitHub</a>.</p>
+    <p>If you like my projects, you can <a target="_blank" href="/buymeacoffee">buy me a coffee</a> :)</p>
+    <footer>
+      <p>Copyright &copy; Andrey Viktorov, 2016</p>
+    </footer>
+  </section>
 
   <!-- Yandex.Metrika counter --><script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter31242438 = new Ya.Metrika({ id:31242438, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="https://mc.yandex.ru/watch/31242438" style="position:absolute; left:-9999px;" alt="" /></div></noscript><!-- /Yandex.Metrika counter -->
 </body>
